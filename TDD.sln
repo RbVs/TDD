@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.BusinessLogic", "TDD.BusinessLogic\TDD.BusinessLogic.csproj", "{3975FB5E-7639-4024-AB2D-16E7F0196F86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.UnitTests", "TDD.UnitTests\TDD.UnitTests.csproj", "{6301CB3D-1322-4B3E-8ECC-C81B30CBC02C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3975FB5E-7639-4024-AB2D-16E7F0196F86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3975FB5E-7639-4024-AB2D-16E7F0196F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3975FB5E-7639-4024-AB2D-16E7F0196F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3975FB5E-7639-4024-AB2D-16E7F0196F86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6301CB3D-1322-4B3E-8ECC-C81B30CBC02C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6301CB3D-1322-4B3E-8ECC-C81B30CBC02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6301CB3D-1322-4B3E-8ECC-C81B30CBC02C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6301CB3D-1322-4B3E-8ECC-C81B30CBC02C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09855DC1-605D-468E-B186-BFAB6F4519AE}
+	EndGlobalSection
+EndGlobal
