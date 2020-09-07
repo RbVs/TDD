@@ -16,7 +16,6 @@ namespace TDD.UnitTests
             // Act
             var actual = calc.Add(num1, num2);
             // Assert
-
             Assert.Equal(expected, actual);
         }
 
@@ -26,7 +25,7 @@ namespace TDD.UnitTests
         public void Subtract_SimpleNumbers_ReturnsPass(double num1, double num2, double expected)
         {
             var calc = new Calculator();
-            var actual = calc.Substract(num1, num2);
+            var actual = calc.Subtract(num1, num2);
             Assert.Equal(expected, actual);
         }
 
@@ -59,12 +58,17 @@ namespace TDD.UnitTests
             //Arrange
             var calc = new Calculator();
 
+            #region Possible Setup
+
             //Act
             //Action action = () => calc.Divide(num1, num2);
 
             //Assert
-            Assert.Throws<ArgumentException>(() => calc.Divide(num1, num2));
             //Assert.Throws<ArgumentException>(action);
+
+            #endregion
+
+            Assert.Throws<ArgumentException>(() => calc.Divide(num1, num2));
         }
     }
 }
