@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TDD.Api\TDD.Api.csproj" />
     <ProjectReference Include="..\TDD.BusinessLogic\TDD.BusinessLogic.csproj" />
   </ItemGroup>
 
