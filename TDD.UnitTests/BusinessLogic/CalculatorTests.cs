@@ -2,7 +2,7 @@
 using TDD.BusinessLogic;
 using Xunit;
 
-namespace TDD.UnitTests
+namespace TDD.UnitTests.BusinessLogic
 {
     public class CalculatorTests
     {
