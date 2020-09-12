@@ -7,6 +7,11 @@ namespace TDD.BusinessLogic
         public string Name => "Aref";
         public int Age => 35;
 
+        public string GetFullName(string firstName, string lastName)
+        {
+            return $"{firstName} {lastName}";
+        }
+
         public int GetOrdersByName(string name)
         {
             if (string.IsNullOrEmpty(name)) throw new ArgumentException("Hello Exception");
