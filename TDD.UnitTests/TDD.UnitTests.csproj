@@ -20,4 +20,10 @@
     <ProjectReference Include="..\TDD.BusinessLogic\TDD.BusinessLogic.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="IsOddOrEvenTestDataExtern.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

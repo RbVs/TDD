@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using TDD.BusinessLogic;
+using TDD.UnitTests.BusinessLogic;
 using Xunit;
 
 namespace TDD.UnitTests.Customer
@@ -60,6 +61,42 @@ namespace TDD.UnitTests.Customer
             var calc = _calculatorFixture.Calc;
             //compare 2 collections
             Assert.Equal(expectedCollection, calc.FiboNumbers);
+        }
+
+        [Theory]
+        [InlineData(1, true)]
+        [InlineData(2, false)]
+        public void IsOdd_TestOddAndEven(int value, bool expected)
+        {
+            var calc = new Calculations();
+            var result = calc.IsOdd(value);
+            Assert.Equal(result, expected);
+        }
+
+        [Theory]
+        [MemberData(nameof(CalculationDataShare.IssOddOrEvenData), MemberType = typeof(CalculationDataShare))]
+        public void IsOdd_TestOddAndEven_WithSharedClassData(int value, bool expected)
+        {
+            var calc = new Calculations();
+            var result = calc.IsOdd(value);
+            Assert.Equal(result, expected);
+        }
+        [Theory]
+        [MemberData(nameof(CalculationDataShare.IsOddOrEvenExternalData), MemberType = typeof(CalculationDataShare))]
+        public void IsOdd_TestOddAndEven_WithExternalData(int value, bool expected)
+        {
+            var calc = new Calculations();
+            var result = calc.IsOdd(value);
+            Assert.Equal(result, expected);
+        }
+
+        [Theory]
+        [IsOddOrEvenData]
+        public void IsOdd_TestOddAndEven_WithCustomAttribute(int value, bool expected)
+        {
+            var calc = new Calculations();
+            var result = calc.IsOdd(value);
+            Assert.Equal(result, expected);
         }
     }
 }
